@@ -95,7 +95,7 @@ img {
     max-width: 100%;
     height: auto;
     background-color: #ccc;
-    bottom: -60%;
+    bottom: -100%;
     padding: 20px;
     transition: 0.3s linear;
     cursor: pointer;
@@ -176,4 +176,29 @@ a {
     justify-content: center;
     align-items: center;
     line-height: 2;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1248px) {
+    .list-project {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .list-project {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .list-project {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .list-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
