@@ -1,5 +1,6 @@
-const IMG_PATH = "https://doanhaiduy.github.io/api-json/";
-fetch("https://doanhaiduy.github.io/api-json/project.json")
+const IMG_PATH = "https://github.com/Doanhaiduy/Project-js-full/assets/img/";
+const API = "https://github.com/Doanhaiduy/Project-js-full/assets/js/project.json";
+fetch(API)
     .then((response) => response.json())
     .then((data) => {
         data.results.forEach((element) => {
@@ -14,8 +15,12 @@ fetch("https://doanhaiduy.github.io/api-json/project.json")
                         <span class ="title">${element.title}</span>
                         <p class="time-code">${element.release_date}</p>
                         <p class="desc">
-                            <div class="btn"><a target = "blank" href="https://github.com/Doanhaiduy/Project-js-${element.source}">Source</a></div>
-                            <div class="btn"><a target = "blank" href="https://doanhaiduy.github.io/Project-js-${element.live_demo}">Live Demo</a></div>
+                            <div class="btn"><a target = "blank" href="https://github.com/Doanhaiduy/${
+                                element.id <= 50 ? "Project-js-" + element.source : element.source
+                            }">Source</a></div>
+                            <div class="btn"><a target = "blank" href="https://doanhaiduy.github.io/${
+                                element.id <= 50 ? "Project-js-" + element.live_demo : element.live_demo
+                            }">Live Demo</a></div>
                         </p>
                     </div>
                 </div>`;

@@ -167,6 +167,22 @@
             "release_date": "2023-03-06",
             "source": "21",
             "live_demo": "21"
+        },
+        {
+            "id": 51,
+            "title": "Portfolio",
+            "image": "/project-51.png",
+            "release_date": "2023-02-20",
+            "source": "Portfolio-NTU",
+            "live_demo": "Portfolio-NTU"
+        },
+        {
+            "id": 52,
+            "title": "Form Validation",
+            "image": "/project-52.png",
+            "release_date": "2023-02-25",
+            "source": "Form-validation",
+            "live_demo": "Form-validation"
         }
     ]
 }

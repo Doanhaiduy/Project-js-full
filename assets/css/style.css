@@ -123,7 +123,7 @@ strong {
     user-select: none;
     position: relative;
     margin: 10px 0px;
-    padding: 12px 20px;
+    /* padding: 7px 20px; */
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: 0.5s;
@@ -149,9 +149,12 @@ strong {
 }
 
 a {
+    display: block;
+    text-align: center;
     color: #e0e0e0;
     text-decoration: none;
-    width: 100px;
+    width: 100%;
+    line-height: 2.3;
 }
 
 .btn:hover {
@@ -177,6 +180,7 @@ a {
     align-items: center;
     line-height: 2;
     text-align: center;
+    padding: 5px 20px;
 }
 
 @media only screen and (max-width: 1248px) {
