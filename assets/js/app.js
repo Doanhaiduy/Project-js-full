@@ -1,5 +1,5 @@
 const IMG_PATH = "https://github.com/Doanhaiduy/Project-js-full/assets/img/";
-const API = "https://github.com/Doanhaiduy/Project-js-full/assets/js/project.json";
+const API = "https://github.com/Doanhaiduy/Project-js-full/project.json";
 fetch(API)
     .then((response) => response.json())
     .then((data) => {
