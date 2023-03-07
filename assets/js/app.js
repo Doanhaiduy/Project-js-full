@@ -1,6 +1,5 @@
-const IMG_PATH = "https://github.com/Doanhaiduy/Project-js-full/assets/img/";
-const API = "https://github.com/Doanhaiduy/Project-js-full/project.json";
-fetch(API)
+const IMG_PATH = "https://doanhaiduy.github.io/api-json/image/";
+fetch("https://doanhaiduy.github.io/api-json/project.json")
     .then((response) => response.json())
     .then((data) => {
         data.results.forEach((element) => {
@@ -15,7 +14,7 @@ fetch(API)
                         <span class ="title">${element.title}</span>
                         <p class="time-code">${element.release_date}</p>
                         <p class="desc">
-                            <div class="btn"><a target = "blank" href="https://github.com/Doanhaiduy/${
+                            <div class="btn"><a target = "blank" href="https://github.com/Doanhaiduy/{
                                 element.id <= 50 ? "Project-js-" + element.source : element.source
                             }">Source</a></div>
                             <div class="btn"><a target = "blank" href="https://doanhaiduy.github.io/${
