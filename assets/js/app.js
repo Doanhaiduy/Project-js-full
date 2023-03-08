@@ -1,5 +1,6 @@
-const IMG_PATH = "https://doanhaiduy.github.io/api-json/image/";
-fetch("https://doanhaiduy.github.io/api-json/project.json")
+const IMG_PATH = "https://doanhaiduy.github.io/api-project-js/img/";
+const API = "https://doanhaiduy.github.io/api-project-js/project.json";
+fetch(API)
     .then((response) => response.json())
     .then((data) => {
         data.results.forEach((element) => {
